@@ -13,7 +13,7 @@ public class SqrtUsingBS {
         int res = 0;
 
         while (low <= high) {
-            int mid = (low + high) / 2;
+            int mid = low + (high - low) / 2;
             if (mid * mid == number) {
                 return mid;
             } else if (mid * mid < number) {

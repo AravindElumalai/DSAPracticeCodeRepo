@@ -7,10 +7,10 @@ public class LeetCode367PerfectSquare {
         if (num == 1 || num == 0) {
             return true;
         }
-        int start = 1;
-        int end = num;
+        long start = 1;
+        long end = num;
         while (start <= end) {
-            int middle = start + (end - start) / 2;
+            long middle = start + (end - start) / 2;
             if (middle * middle == num) {
                 return true;
             } else if (middle * middle < num) {
